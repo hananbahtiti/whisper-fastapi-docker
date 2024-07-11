@@ -24,5 +24,13 @@ This repository provides an API for converting speech to text and translating sp
 ### Installation 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/whisper-fastapi-docker.git
+   git clone https://github.com/hananbahtiti/whisper-fastapi-docker.git
    cd whisper-fastapi-docker
+
+2. Build the Docker image:
+   ```bash
+   docker build -t whisper-api .
+
+3. Run the Docker container:
+   ```bash
+   docker run -p 2000:2000 whisper-api

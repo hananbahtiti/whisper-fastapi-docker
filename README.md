@@ -14,9 +14,15 @@ This repository provides an API for converting speech to text and translating sp
 - FastAPI: To build the web API.
 - Docker: For containerizing the application, ensuring consistent deployment across environments.
 
-### Getting Started
+## Getting Started 
 
+### Prerequisites 
+
+- Docker
+- Git
+
+### Installation 
 1. Clone the repository:
-   `bash
+   ```bash
    git clone https://github.com/your-username/whisper-fastapi-docker.git
    cd whisper-fastapi-docker

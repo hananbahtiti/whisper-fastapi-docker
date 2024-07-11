@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  whisper_final_test-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: whisper_final_test-api
+    restart: always
+    ports:
+      - "2000:2000"
+
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    deploy:
+      resources:
+        reservations:
+          devices:
+          - driver: nvidia
+            capabilities: [gpu]
+    volumes:
+      - ./:/whisper_test/
